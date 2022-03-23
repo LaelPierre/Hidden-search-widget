@@ -1,5 +1,8 @@
-function calculator(str) {
-  return eval(str);
-}
-const final = calculator("2+2");
-console.log(final);
+const search = document.querySelector(".search");
+const btn = document.querySelector(".btn");
+const input = document.querySelector(".input");
+
+btn.addEventListener("click", () => {
+  search.classList.toggle("active");
+  input.focus();
+});
